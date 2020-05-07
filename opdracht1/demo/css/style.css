@@ -1,16 +1,72 @@
 * {
-  box-sizing:border-box;
-}
-html{
-  background:#eee;
-  background: url("../img/flagF4D.png") center no-repeat;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-  max-width: 30em;
-  margin: 1em auto;
-  padding: 1em;
-  background: #fff;
-  border-radius: 1em;
-  box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+html {}
+
+body {
+	font-family: "HelveticaNeue-light";
+	background-color: #000000;
+	color: #ffffff;
+}
+
+main{
+	margin: 0 2em;
+}
+
+main img {
+	display: block;
+	max-width: 50%;
+	margin: 32px auto;
+	
+}
+
+h1 {
+	font-family: "HelveticaNeue-bold";
+	font-size: 32px;
+	margin: 32px 0 8px;
+}
+
+h2 {
+	font-family: "HelveticaNeue";
+	font-size: 24px;
+	color: #666666;
+	margin: 0 0 8px;
+}
+
+p {
+	font-size: 16px;
+	margin: 0 0 24px;
+}
+
+header p {
+	font-size: 16px;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin: 1em 0;
+}
+
+header img{
+	align-items: flex-start;
+}
+
+button {
+	font-family: "HelveticaNeue-bold";
+	background-color: #C30303;
+	color: #FFFFFF;
+	padding: 0.5em 2em;
+	margin: 1em;
+	border: 0px;
+	border-radius: 0.5em;
+	
+}
+
+button.added {
+	background-color: green;
 }
