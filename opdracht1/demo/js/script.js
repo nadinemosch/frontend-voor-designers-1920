@@ -13,4 +13,3 @@ function filmToevoegen(){
 	button.classList.toggle('welToegevoegd');
 	button.textContent='ADDED'
 }
-

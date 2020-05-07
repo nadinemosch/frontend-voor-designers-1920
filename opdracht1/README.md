@@ -6,12 +6,16 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
 # Project titel
-Beschrijf hier je eigen project.
+Beschrijf hier je eigen project. > Film toevoegen aan lijst
 En voeg een link naar je demo toe.
+https://nadinemosch.github.io/frontend-voor-designers-1920/opdracht1/demo/index.html
 
 ## interface
 Leg de interface uit. In de demo heb je de interface design principles 04 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
 
+De gebruiker krijgt de optie om terug te gaan (dit werkt nog niet) en of hij de film wilt toevoegen aan de lijst, verder gebeuren er geen dingen die de gebruiker niet in controle heeft. 
+
 
 ## code
-Leg de code uit.
+Ik heb code geschreven voor op een telefoon, dus je moet hem op mobiel bekijken.
+Wanneer je op de 'add' button klikt wordt hij groen, ik weet alleen niet hoe ik hem weer terug naar rood krijg (gok iets met if /else)
