@@ -84,7 +84,6 @@ button.added {
 header a {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
 	margin: 1em 0;
 }
 
@@ -107,11 +106,8 @@ button {
 	border-radius: 0.5em;
 }
 
-.nietToegevoegd {
-	background-color: #C30303;
-}
-
 .welToegevoegd {
 	background-color: green;
+    
 }
 

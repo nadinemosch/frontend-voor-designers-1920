@@ -11,5 +11,12 @@ button.addEventListener('click', filmToevoegen);
 
 function filmToevoegen(){
 	button.classList.toggle('welToegevoegd');
-	button.textContent='ADDED'
+    var isToegevoegd = button.classList.contains('welToegevoegd')
+    
+    if(isToegevoegd){
+        button.textContent='REMOVE'
+    }
+    else{
+        button.textContent='ADD'
+    }
 }

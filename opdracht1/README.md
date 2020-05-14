@@ -13,9 +13,13 @@ https://nadinemosch.github.io/frontend-voor-designers-1920/opdracht1/demo/index.
 ## interface
 Leg de interface uit. In de demo heb je de interface design principles 04 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
 
-De gebruiker krijgt de optie om terug te gaan (dit werkt nog niet) en of hij de film wilt toevoegen aan de lijst, verder gebeuren er geen dingen die de gebruiker niet in controle heeft. 
+De gebruiker krijgt de optie om terug te gaan en of hij de film wilt toevoegen aan de lijst, verder gebeuren er geen dingen die de gebruiker niet in controle heeft. 
+
+Verder heb ik ook gebruik gemaakt van hierarchie, zo is de titel in caps en vetgedrukt en zie je dat de regel daaronder met de datum en hoe lang de film duurt een minder opvallende kleur heeft en een kleinere font-size. De 'added' button valt dan wel weer op.
 
 
 ## code
 Ik heb code geschreven voor op een telefoon, dus je moet hem op mobiel bekijken.
-Wanneer je op de 'add' button klikt wordt hij groen, ik weet alleen niet hoe ik hem weer terug naar rood krijg (gok iets met if /else)
+
+Wanneer je op de 'add' button klikt wordt hij groen en verandert de tekst naar 'remove' en wanneer ik hem weer wil verwijderen klik ik op de groene 'remove' knop. 
+
