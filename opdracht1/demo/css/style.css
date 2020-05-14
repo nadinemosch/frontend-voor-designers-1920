@@ -1,113 +1,143 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {}
 
 body {
-	font-family: "HelveticaNeue-light";
-	background-color: #000000;
-	color: #ffffff;
+    font-family: "HelveticaNeue-light";
+    background-color: #000000;
+    color: #ffffff;
 }
 
 main {
-	margin: 0 2em;
+    margin: 0 2em;
 }
 
 main img {
-	display: block;
-	max-width: 50%;
+    display: block;
+    max-width: 50%;
 
-	margin: 1em auto;
+    margin: 1em auto;
 }
 
 h1 {
-	font-family: "HelveticaNeue-bold";
+    font-family: "HelveticaNeue-bold";
 
-	font-size: 2em;
+    font-size: 2em;
 
-	margin: 1em 0 0.5em;
+    margin: 1em 0 0.5em;
 }
 
 h2 {
-	font-family: "HelveticaNeue";
-	font-size: 24px;
-	color: #666666;
-	margin: 0 0 8px;
+    font-family: "HelveticaNeue";
+    font-size: 24px;
+    color: #666666;
+    margin: 0 0 8px;
 }
 
 p {
-	font-size: 16px;
-	margin: 0 0 24px;
+    font-size: 16px;
+    margin: 0 0 24px;
 }
 
 a {
-	text-decoration: none;
-	text-align: left;
-	color: #ffffff;
-	font-size: 16px;
+    text-decoration: none;
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 header p {
-	font-size: 16px;
+    font-size: 16px;
 }
 
 header {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	margin: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 1em 0;
 }
 
-header img{
-	align-items: flex-start;
+header img {
+    align-items: flex-start;
 }
 
 button {
-	font-family: "HelveticaNeue-bold";
-	background-color: #C30303;
-	color: #FFFFFF;
-	padding: 0.5em 2em;
-	margin: 1em;
-	border: 0px;
-	border-radius: 0.5em;
-	
+    font-family: "HelveticaNeue-bold";
+    background-color: #C30303;
+    color: #FFFFFF;
+    padding: 0.5em 2em;
+    margin: 1em;
+    border: 0px;
+    border-radius: 0.5em;
+
 }
 
 button.added {
-	background-color: green;
+    background-color: green;
 }
 
 /* header opmaak */
 header a {
-	display: flex;
-	justify-content: flex-start;
-	margin: 1em 0;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 0;
 }
 
 a p {
-	margin: 0 0.5em;
+    margin: 0 0.5em;
 }
 
 a img {
-	padding: 0 1em;
+    padding: 0 1em;
 }
 
 button {
-	font-family: "HelveticaNeue-bold";
-	font-size: 1em;
-	background-color: #C30303;
-	color: #FFFFFF;
-	padding: 0.5em 2em;
-	margin: 0.5em 0;
-	border: 0px;
-	border-radius: 0.5em;
+    font-family: "HelveticaNeue-bold";
+    font-size: 1em;
+    background-color: #C30303;
+    color: #FFFFFF;
+    padding: 0.5em 2em;
+    margin: 0.5em 0;
+    width: 130px;
+    border: 0px;
+    border-radius: 0.5em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@keyframes wiebel {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
 }
 
 .welToegevoegd {
-	background-color: green;
-    
+    background-color: green;
+    animation: wiebel 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+
 }
+
 
