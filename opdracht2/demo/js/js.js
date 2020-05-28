@@ -18,6 +18,8 @@ function navigatieVerder() {
     fotoCarousel.style.transform = "translateX(-312px)";
 }
 
+// dit stuk hieronder werkt niet... // 
+
 function pressNavigeer() {
     if (e.keyCode == '37') {
         fotoCarousel.style.transform = "translateX(312px)";
