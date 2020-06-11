@@ -18,16 +18,16 @@ request.send();
 
 // onload/onerror zijn eventlistener van het xmlhttprequest > als de data is geladen voert ie deze functie
 request.onload = function () {
-    const doggos = request.response;
+    const dogs = request.response;
     //functie aanroepen en json data aan meegeven als parameter
     // console.log(doggos);
-    showDoggos(doggos);
+    showDogs(dogs);
 }
 
-function showDoggos(jsonObj) {
+function showDogs(jsonObj) {
     // console.log("showDoggos", jsonObj["message"]);
     // console.log("function showDoggos", jsonObj);
-    // console.log(jsonObj[0].message);
+    // console.log(jsonObj[1].message);
 
     for (let i = 0; i < jsonObj.length; i++) {
         
