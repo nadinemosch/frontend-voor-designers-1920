@@ -21,7 +21,7 @@ request.onload = function () {
     const dogs = request.response;
     //functie aanroepen en json data aan meegeven als parameter
     // console.log(doggos);
-    showDogs(dogs);
+    showDogs(dogs.message);
 }
 
 function showDogs(jsonObj) {
