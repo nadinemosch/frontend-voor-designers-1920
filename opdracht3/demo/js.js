@@ -30,10 +30,12 @@ function showDoggos(jsonObj) {
     // console.log(jsonObj[0].message);
 
     for (let i = 0; i < jsonObj.length; i++) {
+        
         //html elementen aanmaken
         const myArticle = document.createElement('article');
+        
         const afbeelding = document.createElement('img');
-        plaatje.src = jsonObj[i].message;
+        afbeelding.src = jsonObj[i].message;
 
         // html elementen genest
         myArticle.appendChild(afbeelding);

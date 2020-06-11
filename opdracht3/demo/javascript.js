@@ -28,7 +28,6 @@ function showMovies(jsonObj) {
     // console.log("showHeroes", jsonObj["members"]);
     // var heroes = jsonObj['members'];
     // console.log("function Showmovies", jsonObj);
-
     //console.log(jsonObj[0].title);
 
     for (let i = 0; i < jsonObj.length; i++) {
