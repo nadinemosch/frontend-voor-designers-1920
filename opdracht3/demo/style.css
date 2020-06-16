@@ -1,48 +1,84 @@
-/* || general styles */
-
-html {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  width: 800px;
-  margin: 0 auto;
+    background-color: #F1EFED;
+    font-family: "HelveticaNeue-light";
 }
 
-h1, h2 {
-  font-family: 'Faster One', cursive;
+main {
+    margin: 2em 1em;
 }
 
-/* header styles */
-
+/* titel en inleiding */
 h1 {
-  font-size: 4rem;
-  text-align: center;
+    font-family: "HelveticaNeue-CondensedBlack";
+    display: flex;
+    justify-content: center;
+    color: #6F4635;
+    font-size: 40px;
 }
 
-header p {
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
+p {
+    margin: 1em 0;
+    font-size: 16px;
 }
 
-/* section styles */
-
-section article {
-  width: 33%;
-  float: left;
+/* navigatie buttons */
+button {
+    margin: 1em;
+    padding: 1em;
+    width: 5em;
+    font-family: "HelveticaNeue-CondensedBlack";
+    font-size: 12px;
+    background-color: #FFFFFF;
+    color: #808080;
+    border-radius: 2em;
+    border: 2px solid;
+    border-color: #808080;
 }
 
-section p {
-  margin: 5px 0;
+button:hover {
+    background-color: #F0B838;
+    cursor: pointer;
 }
 
-section ul {
-  margin-top: 0;
+#beagleButton {
+    font-size: 20px;
+    background-color: #85A06C;
+    box-shadow: 5px 5px 10px 0px rgba(168, 165, 168, 1);
+    color: #FAFAFA;
+    width: 10em;
+    border: 0px;
 }
 
-h2 {
-  font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
+/* slideshow */
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* carrousel foto's */
+img {
+    display: flex;
+    overflow: hidden;
+}
+
+li {
+    position: relative;
+}
+
+li img {
+    max-width: 300px;
+    margin: 1em 0.5em;
 }

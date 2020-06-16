@@ -6,18 +6,31 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
 # Project titel
-Beschrijf hier je eigen project.
-En voeg een link naar je demo toe.
+Beagle carrousel
+
+Beschrijving en link
 https://nadinemosch.github.io/frontend-voor-designers-1920/opdracht3/demo/index.html
+
+Ik heb een pagina gemaakt waar er afbeeldingen van Beagles ingeladen worden, wanneer je op de buttons links en rechts klikt kan je navigeren tussen de afbeeldingen. Hetzelfde geldt voor wanneer je de pijltjes op je toetsenbord gebruikt. Er is ook een button op de pagina waardoor de pagina refreshed en je andere afbeeldingen te zien krijgt, deze button zal verschillende states krijgen (default / hover en pressed).
 
 ## interface
 Leg de interface uit.
 
 In de demo heb je interface design principles 04, 08, 09 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
 
+#04 > Er zullen geen events plaatsvinden die niet veroorzaakt worden door de gebruiker zelf, hierdoor voelt de gebruiker zich volledig in controle
+#08 > Wanneer ze op de pagina belanden zijn er meerdere opties die ze kunnen doen (navigeren tussen de afbeeldingen of de pagina refreshen) dus er is altijd een next step die de gebruiker kan nemen
+#09 > De visuele vormgeving zal ervoor zorgen dat de gebruiker kan raden wat er gebeurt wanneer zij hierop klikken of wanneer zij gebruik maken van de pijltjes op hun toetsenbord. Buttons zullen eruitzien als buttons en zich dus ook zo gedragen.
+#11 > Door een titel + subtitel + CTA toe te voegen zal er een duidelijke hierarchie ontstaan, deze zijn gestyled zodat het duidelijk is voor de gebruiker wat de hierarchie hiervan is.
+
 In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) toegepast. Hoe heb je dat gedaan?
+1. Wanneer je op de buttons met pijlen klikt kan je naar links of rechts navigeren (onclick event)
+2. Wanneer je op de pijltjes op je toetsenbord klikt kan je naar links of rechts navigeren (keypress event)
+3. Wanneer je op de 'refresh' button klikt zal de pagina refreshen (onclick event)
 
 IN de demo heb je een aantal states van de [UI stack](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/) toegepast. Hoe heb je dat gedaan?
+
+
 
 
 ## code

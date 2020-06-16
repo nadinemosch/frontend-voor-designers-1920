@@ -1,46 +1,53 @@
-// variabelen met de html elementen uit de pagina
-// const is een constante variabele, dus ongeveer hetzelfde als var
-const header = document.querySelector('header'); // variabele aangemaakt voor de header
-const section = document.querySelector('section'); // variabele aangemaakt voor de section
+var beagleButton = document.getElementById('beagleButton');
+beagleButton.addEventListener('click', goBeagles);
 
-// variabele met de url waar de JSON vandaan komt
-let requestURL = 'https://dog.ceo/api/breed/beagle/images/random/3';
+function goBeagles() {
+    // JSON DATA INLADEN MET 3 AFBEELDINGEN VAN BEAGLES
 
-// een xml http request variabele aanmaken
-let request = new XMLHttpRequest();
+    // variabelen met de html elementen uit de pagina
+    // const is een constante variabele, dus ongeveer hetzelfde als var
+    const section = document.querySelector('section'); // variabele aangemaakt voor de section
 
-// koppel json url aan xmlhttprequest
-request.open('GET', requestURL);
-// moet je meegeven, zo weet js dat de data die terugkomt json is
-request.responseType = 'json';
-// roept url aan en verstuurd 'm
-request.send();
+    // variabele met de url waar de JSON vandaan komt
+    let requestURL = 'https://dog.ceo/api/breed/beagle/images/random/3';
 
-// onload/onerror zijn eventlistener van het xmlhttprequest > als de data is geladen voert ie deze functie
-request.onload = function () {
-    const dogs = request.response;
-    //functie aanroepen en json data aan meegeven als parameter
-    // console.log(doggos);
-    showDogs(dogs.message);
-}
+    // een xml http request variabele aanmaken
+    let request = new XMLHttpRequest();
 
-function showDogs(jsonObj) {
-    // console.log("showDoggos", jsonObj["message"]);
-    // console.log("function showDoggos", jsonObj);
-    // console.log(jsonObj[1].message);
+    // koppel json url aan xmlhttprequest
+    request.open('GET', requestURL);
+    // moet je meegeven, zo weet js dat de data die terugkomt json is
+    request.responseType = 'json';
+    // roept url aan en verstuurd 'm
+    request.send();
 
-    for (let i = 0; i < jsonObj.length; i++) {
-        
-        //html elementen aanmaken
-        const myArticle = document.createElement('article');
-        
-        const afbeelding = document.createElement('img');
-        afbeelding.src = jsonObj[i].message;
-
-        // html elementen genest
-        myArticle.appendChild(afbeelding);
-
-        // nieuwe html elementen aan de section in de html
-        section.appendChild(myArticle);
+    // onload/onerror zijn eventlistener van het xmlhttprequest > als de data is geladen voert ie deze functie
+    request.onload = function () {
+        const dogs = request.response;
+        //functie aanroepen en json data aan meegeven als parameter
+        // console.log(doggos);
+        showDogs(dogs.message);
     }
+
+    function showDogs(jsonObj) {
+        // console.log("showDoggos", jsonObj["message"]);
+        // console.log("function showDoggos", jsonObj);
+        // console.log(jsonObj[1].message);
+
+        for (let i = 0; i < jsonObj.length; i++) {
+
+            //html elementen aanmaken
+            const myArticle = document.createElement('article');
+
+            const afbeelding = document.createElement('img');
+            afbeelding.src = jsonObj[i];
+
+            // html elementen genest
+            myArticle.appendChild(afbeelding);
+
+            // nieuwe html elementen aan de section in de html
+            section.appendChild(myArticle);
+        }
+    }
+
 }
