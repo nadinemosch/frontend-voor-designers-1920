@@ -1,15 +1,15 @@
-var beagleButton = document.getElementById('beagleButton');
+// Beagle button uit html halen en hier een click event aan koppelen waarna hij de goBeagles functie uitvoert
+var beagleButton = document.querySelector('#beagleButton');
 beagleButton.addEventListener('click', goBeagles);
 
+// JSON DATA INLADEN MET 4 AFBEELDINGEN VAN BEAGLES WANNEER ER OP DE BUTTON GEKLIKT WORDT
 function goBeagles() {
-    // JSON DATA INLADEN MET 3 AFBEELDINGEN VAN BEAGLES
-
     // variabelen met de html elementen uit de pagina
     // const is een constante variabele, dus ongeveer hetzelfde als var
     const section = document.querySelector('section'); // variabele aangemaakt voor de section
 
     // variabele met de url waar de JSON vandaan komt
-    let requestURL = 'https://dog.ceo/api/breed/beagle/images/random/3';
+    let requestURL = 'https://dog.ceo/api/breed/beagle/images/random/4';
 
     // een xml http request variabele aanmaken
     let request = new XMLHttpRequest();
@@ -49,5 +49,25 @@ function goBeagles() {
             section.appendChild(myArticle);
         }
     }
+}
 
+// VARIABELEN VOOR HET GEBRUIK VAN DE TERUG EN VERDER BUTTON
+var buttonTerug = document.querySelector('#terugButton');
+var buttonVerder = document.querySelector('#verderButton');
+var beagleCarousel = document.querySelector('section');
+
+buttonTerug.addEventListener('click', navigatieTerug);
+buttonVerder.addEventListener('click', navigatieVerder);
+
+
+buttonTerug.addEventListener('keydown', pressNavigeer);
+buttonVerder.addEventListener('keydown', pressNavigeer);
+
+
+function navigatieTerug() {
+    beagleCarousel.style.transform = "translateX(332px)";
+}
+
+function navigatieVerder() {
+    beagleCarousel.style.transform = "translateX(-332px)";
 }

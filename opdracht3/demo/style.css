@@ -27,7 +27,7 @@ p {
     font-size: 16px;
 }
 
-/* navigatie buttons */
+/* Beagle en navigatie buttons */
 button {
     margin: 1em;
     padding: 1em;
@@ -36,13 +36,15 @@ button {
     font-size: 12px;
     background-color: #FFFFFF;
     color: #808080;
-    border-radius: 2em;
+    border-radius: 1em;
     border: 2px solid;
     border-color: #808080;
+    z-index: 1;
 }
 
 button:hover {
-    background-color: #F0B838;
+    background-color: #808080;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -55,6 +57,11 @@ button:hover {
     border: 0px;
 }
 
+#beagleButton:hover {
+    background-color: #7A9263;
+    cursor: pointer;
+}
+
 /* slideshow */
 div {
     display: flex;
@@ -64,21 +71,18 @@ div {
 
 section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    /* overflow: hidden*/;
+    width: 332px;
+    height: 300px;
 }
 
 /* carrousel foto's */
 img {
     display: flex;
-    overflow: hidden;
-}
-
-li {
-    position: relative;
-}
-
-li img {
+    z-index: 0;
+    width: 300px;
     max-width: 300px;
-    margin: 1em 0.5em;
+    max-height: 300px;
+    margin: 0 16px;
 }
