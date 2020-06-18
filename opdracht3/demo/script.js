@@ -51,23 +51,40 @@ function goBeagles() {
     }
 }
 
-// VARIABELEN VOOR HET GEBRUIK VAN DE TERUG EN VERDER BUTTON
+// NAVIGEREN TUSSEN DE AFBEELDINGEN
+
+// variabelen voor het gebruik van de terug en verder button
 var buttonTerug = document.querySelector('#terugButton');
 var buttonVerder = document.querySelector('#verderButton');
+
+// variabele voor de <section> waar de afbeeldingen inzitten
 var beagleCarousel = document.querySelector('section');
 
+// event listeners toevoegen aan de terug en verder buttons
 buttonTerug.addEventListener('click', navigatieTerug);
 buttonVerder.addEventListener('click', navigatieVerder);
 
-
-buttonTerug.addEventListener('keydown', pressNavigeer);
-buttonVerder.addEventListener('keydown', pressNavigeer);
-
-
+// functie aanmaken voor wat er gebeurt wanneer je op de terug button drukt
 function navigatieTerug() {
-    beagleCarousel.style.transform = "translateX(332px)";
+    beagleCarousel.classList.add('navigeerTerug');
+    var terugGenavigeerd = beagleCarousel.classList.contains('navigeerTerug');
+    
+    if (terugGenavigeerd) {
+        beagleCarousel.classList.remove('navigeerVerder');
+    }
+    console.log(beagleCarousel.classList.contains);
 }
 
+// functie aanmaken voor wat er gebeurt wanneer je op de verder button drukt
 function navigatieVerder() {
-    beagleCarousel.style.transform = "translateX(-332px)";
+    beagleCarousel.classList.add('navigeerVerder');
+    var verderGenavigeerd = beagleCarousel.classList.contains('navigeerVerder');
+
+    if (verderGenavigeerd) {
+        beagleCarousel.classList.remove('navigeerTerug');
+    }
+    console.log(beagleCarousel.classList.contains);
 }
+
+//buttonTerug.addEventListener('keydown', pressNavigeer);
+//buttonVerder.addEventListener('keydown', pressNavigeer);
