@@ -28,14 +28,15 @@ p {
 }
 
 /* Beagle en navigatie buttons */
+
+/*default button */
 button {
     margin: 1em;
     padding: 1em;
-    width: 5em;
+    background-color: #85A06C;
+    width: 6em;
     font-family: "HelveticaNeue-CondensedBlack";
     font-size: 12px;
-    background-color: #FFFFFF;
-    color: #808080;
     border-radius: 1em;
     border: 2px solid;
     border-color: #808080;
@@ -43,23 +44,78 @@ button {
 }
 
 button:hover {
+    background-color: #7A9263;
+    cursor: pointer;
+}
+
+/*navigatie buttons*/
+#verderButton {
+    background-color: #FFFFFF;
+    color: #808080;
+}
+
+#verderButton:hover {
     background-color: #808080;
     color: #ffffff;
     cursor: pointer;
 }
 
+#terugButton {
+    background-color: #FFFFFF;
+    color: #808080;
+}
+
+#terugButton:hover {
+    background-color: #808080;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*beagle button*/
 #beagleButton {
     font-size: 20px;
-    background-color: #85A06C;
     box-shadow: 5px 5px 10px 0px rgba(168, 165, 168, 1);
     color: #FAFAFA;
     width: 10em;
     border: 0px;
 }
 
-#beagleButton:hover {
-    background-color: #7A9263;
-    cursor: pointer;
+.Pressed {
+    animation: wiebel 0.3s;
+    background-color: #C6C8C5;
+}
+
+.Pressed:hover {
+    cursor: default;
+    background-color: #C6C8C5;
+}
+
+
+@keyframes wiebel {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+        background-color: #7A9363;
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+        background-color: #6F825D;
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+        background-color: #87937B;
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+        background-color: #A5ABA0;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+        background-color: #C6C8C5;
+    }
 }
 
 /* slideshow */
@@ -92,7 +148,5 @@ img {
 }
 
 .navigeerTerug {
-    transform: translateX(332px);
+    transform: translateX(0px);
 }
-
-

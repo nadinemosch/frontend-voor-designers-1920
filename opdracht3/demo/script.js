@@ -1,6 +1,10 @@
+// variabele aangemaakt voor count
+var count = 0;
+
 // Beagle button uit html halen en hier een click event aan koppelen waarna hij de goBeagles functie uitvoert
 var beagleButton = document.querySelector('#beagleButton');
 beagleButton.addEventListener('click', goBeagles);
+
 
 // JSON DATA INLADEN MET 4 AFBEELDINGEN VAN BEAGLES WANNEER ER OP DE BUTTON GEKLIKT WORDT
 function goBeagles() {
@@ -9,7 +13,7 @@ function goBeagles() {
     const section = document.querySelector('section'); // variabele aangemaakt voor de section
 
     // variabele met de url waar de JSON vandaan komt
-    let requestURL = 'https://dog.ceo/api/breed/beagle/images/random/4';
+    let requestURL = 'https://dog.ceo/api/breed/beagle/images/random/3';
 
     // een xml http request variabele aanmaken
     let request = new XMLHttpRequest();
@@ -49,6 +53,22 @@ function goBeagles() {
             section.appendChild(myArticle);
         }
     }
+
+    // BEAGLE BUTTON STATE
+
+    // 'pressed' classlist toevoegen wanneer er op de beagle button geklikt wordt
+    beagleButton.classList.add('Pressed');
+
+    // var aangemaakt voor wanneer de beagle button ingedrukt is
+    var isPressed = beagleButton.classList.contains('Pressed');
+    // als de beagle button 'pressed' bevat dan
+    if (isPressed) {
+        // is de text content 'BEAGLES ADDED'
+        beagleButton.textContent = 'BEAGLES ADDED'
+    } else {
+        // en anders is de text content 'ADD BEAGLES'
+        beagleButtonn.textContent = 'ADD BEAGLES'
+    }
 }
 
 // NAVIGEREN TUSSEN DE AFBEELDINGEN
@@ -68,7 +88,7 @@ buttonVerder.addEventListener('click', navigatieVerder);
 function navigatieTerug() {
     beagleCarousel.classList.add('navigeerTerug');
     var terugGenavigeerd = beagleCarousel.classList.contains('navigeerTerug');
-    
+
     if (terugGenavigeerd) {
         beagleCarousel.classList.remove('navigeerVerder');
     }
