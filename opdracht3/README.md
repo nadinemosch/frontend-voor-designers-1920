@@ -6,6 +6,11 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
 # Project titel
+WAT HAD IK NOG WILLEN DOEN?
+• 1 afbeelding tonen ipv 3 (iets met overflow maar waar moet ik die exact neerzetten? (Als ik 'm op de <section> zet waar de afbeeldingen ingeladen worden krijg ik niet het gewenste resultaat)
+• de terug en verder buttons vervolgens bijna direct naast de afbeelding krijgen ipv zoveel whitespace ertussen
+• Je kan nu door blijven klikken waardoor de afbeeldingen helemaal het scherm uit verplaatst kunnen worden, kan ik op de verplaatsing iets van een limiet zetten?
+
 Beagle carrousel
 
 Bekijk de pagina op desktop!
