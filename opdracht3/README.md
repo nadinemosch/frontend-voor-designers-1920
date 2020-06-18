@@ -8,10 +8,12 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 # Project titel
 Beagle carrousel
 
+Bekijk de pagina op desktop!
+
 Beschrijving en link
 https://nadinemosch.github.io/frontend-voor-designers-1920/opdracht3/demo/index.html
 
-Ik heb een pagina gemaakt waar er afbeeldingen van Beagles ingeladen worden, wanneer je op de buttons links en rechts klikt kan je navigeren tussen de afbeeldingen. Hetzelfde geldt voor wanneer je de pijltjes op je toetsenbord gebruikt. Er is ook een button op de pagina waardoor de pagina refreshed en je andere afbeeldingen te zien krijgt, deze button zal verschillende states krijgen (default / hover en pressed).
+Ik heb een pagina gemaakt waar er afbeeldingen van Beagles ingeladen worden als je op de button klikt, wanneer je op de buttons links en rechts klikt kan je navigeren tussen de afbeeldingen. Hetzelfde geldt voor wanneer je de pijltjes op je toetsenbord gebruikt. 
 
 ## interface
 Leg de interface uit.
@@ -26,12 +28,13 @@ In de demo heb je interface design principles 04, 08, 09 & 11 van [Principles of
 In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) toegepast. Hoe heb je dat gedaan?
 1. Wanneer je op de buttons met pijlen klikt kan je naar links of rechts navigeren (onclick event)
 2. Wanneer je op de pijltjes op je toetsenbord klikt kan je naar links of rechts navigeren (keypress event)
-3. Wanneer je op de 'refresh' button klikt zal de pagina refreshen (onclick event)
+3. Wanneer je op de 'add beagles' button klikt zullen de beagle afbeeldingen inladen (onclick event)
 
 IN de demo heb je een aantal states van de [UI stack](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/) toegepast. Hoe heb je dat gedaan?
 
-
+• Wanneer je op de pagina landt is de 'add beagles' knop een CTA en wanneer je deze hebt ingedrukt dan wordt hij grijs en kan je er niet meer op klikken. (blank state en ideal state)
 
 
 ## code
-Leg de code uit.
+
+De uitleg over de code staat in comments in de bestanden (HTML/CSS en JS)

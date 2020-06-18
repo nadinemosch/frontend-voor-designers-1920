@@ -90,7 +90,7 @@ button:hover {
     background-color: #C6C8C5;
 }
 
-
+/*wiebel animatie 'add beagles' button*/
 @keyframes wiebel {
     0% {
         transform: translate3d(0, 0, 0) translateZ(0);
@@ -143,10 +143,3 @@ img {
     margin: 0 16px;
 }
 
-.navigeerVerder {
-    transform: translateX(-332px);
-}
-
-.navigeerTerug {
-    transform: translateX(0px);
-}

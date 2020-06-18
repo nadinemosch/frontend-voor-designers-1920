@@ -80,31 +80,44 @@ var buttonVerder = document.querySelector('#verderButton');
 // variabele voor de <section> waar de afbeeldingen inzitten
 var beagleCarousel = document.querySelector('section');
 
+// BUTTONS ONCLICK NAVIGEER
 // event listeners toevoegen aan de terug en verder buttons
 buttonTerug.addEventListener('click', navigatieTerug);
 buttonVerder.addEventListener('click', navigatieVerder);
 
 // functie aanmaken voor wat er gebeurt wanneer je op de terug button drukt
 function navigatieTerug() {
-    beagleCarousel.classList.add('navigeerTerug');
-    var terugGenavigeerd = beagleCarousel.classList.contains('navigeerTerug');
-
-    if (terugGenavigeerd) {
-        beagleCarousel.classList.remove('navigeerVerder');
-    }
-    console.log(beagleCarousel.classList.contains);
+    count += 332;
+    // section van de img transformeert elke keer +332 px
+    beagleCarousel.style.transform = `translateX(${count}px)`;
 }
 
 // functie aanmaken voor wat er gebeurt wanneer je op de verder button drukt
 function navigatieVerder() {
-    beagleCarousel.classList.add('navigeerVerder');
-    var verderGenavigeerd = beagleCarousel.classList.contains('navigeerVerder');
-
-    if (verderGenavigeerd) {
-        beagleCarousel.classList.remove('navigeerTerug');
-    }
-    console.log(beagleCarousel.classList.contains);
+    count -= 332;
+    // section van de img transformeert elke keer -332 px
+    beagleCarousel.style.transform = `translateX(${count}px)`;
 }
 
-//buttonTerug.addEventListener('keydown', pressNavigeer);
-//buttonVerder.addEventListener('keydown', pressNavigeer);
+
+//KEYPRESS NAVIGEER
+document.addEventListener('keydown', pressTerug);
+document.addEventListener('keydown', pressVerder);
+
+// functie aanmaken voor wat er gebeurt wanneer je op de > knop op je toetsenbord drukt
+function pressTerug() {
+    if (event.keyCode == 39) {
+        count -= 332;
+        // section van de img transformeert elke keer +332 px
+        beagleCarousel.style.transform = `translateX(${count}px)`;
+    }
+}
+
+// functie aanmaken voor wat er gebeurt wanneer je op de < knop op je toetsenbord drukt
+function pressVerder() {
+    if (event.keyCode == 37) {
+        count += 332;
+        // section van de img transformeert elke keer +332 px
+        beagleCarousel.style.transform = `translateX(${count}px)`;
+    }
+}
